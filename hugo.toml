@@ -9,6 +9,11 @@ theme = "PaperMod"
     ShowReadingTime = true
     ShowShareButtons = true
     ShowCodeCopyButtons = true
+
+    [params.editPost]
+    url = "https://github.com/Stefan-D-W/Stefan-D-W.github.io/edit/main/content"
+    Text = "📝 编辑此文" # 你可以改成任何你喜欢的名字
+    appendFilePath = true # 这一行最重要，它会自动帮你定位到当前文章的文件
     
     [params.homeInfoParams]
         Title = "你好，我是 Stefan"
@@ -17,3 +22,10 @@ theme = "PaperMod"
     [[params.socialIcons]]
         name = "github"
         url = "https://github.com/Stefan-D-W"
+
+    [[menu.main]]
+    identifier = "new_post"
+    name = "➕ 新建博客"
+    # 这个链接是 GitHub 的黑科技，直接进入 posts 文件夹并准备新建文件
+    url = "https://github.com/Stefan-D-W/Stefan-D-W.github.io/new/main/content/posts"
+    weight = 10
