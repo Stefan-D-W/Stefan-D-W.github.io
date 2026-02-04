@@ -1,0 +1,19 @@
+baseURL = "https://Stefan-D-W.github.io/"
+languageCode = "zh-cn"
+title = "Stefan·D·W 的精神世界"
+theme = "PaperMod"
+
+[params]
+    defaultTheme = "auto"
+    displayFullContent = false
+    ShowReadingTime = true
+    ShowShareButtons = true
+    ShowCodeCopyButtons = true
+    
+    [params.homeInfoParams]
+        Title = "你好，我是 Stefan"
+        Content = "在这里，我记录生活，对抗平庸，寻找自由。"
+
+    [[params.socialIcons]]
+        name = "github"
+        url = "https://github.com/Stefan-D-W"
