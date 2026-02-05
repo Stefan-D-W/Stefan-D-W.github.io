@@ -1,0 +1,23 @@
+backend:
+  name: git-gateway
+  repo: Stefan-D-W/Stefan-D-W.github.io # 重点是这一行！
+  branch: main
+
+# 这一行建议在正式发布时删掉，或者改为 false
+# 因为它是让你在本地电脑调试用的
+local_backend: false 
+
+media_folder: "static/images"
+public_folder: "/images"
+
+collections:
+  - name: "blog"
+    label: "我的碎碎念"
+    folder: "content/posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "标题", name: "title", widget: "string"}
+      - {label: "发布日期", name: "date", widget: "datetime"}
+      - {label: "摘要", name: "summary", widget: "text", required: false}
+      - {label: "正文", name: "body", widget: "markdown"}
