@@ -1,0 +1,10 @@
+[build]
+  command = "hugo --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.146.0" # 必须跟你之前 GitHub Actions 里的版本一致
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production]
+  environment = { HUGO_ENV = "production" }
